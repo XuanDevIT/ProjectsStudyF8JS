@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>V.Xuan-Music</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="data:;base64,=" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+<link rel="shortcut icon" href="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3JtNTMzYmF0Y2gyLW5lb24tMTktbDNqdGI1b2IuanBn.jpg" type="image/x-icon">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="titleWeb">V.Xuan Music</h1>
+      <input type="checkbox" id="toggle" />
+
+      <label class="toggle" for="toggle">
+        <i class="bx bxs-sun"></i>
+        <i class="bx bx-moon"></i>
+        <span class="ball"></span>
+      </label>
+      <!-- Music card -->
+      <div class="music-card">
+        <div class="music-card__header">
+          <span class="list-music__icon"
+            ><i class="fa-solid fa-headphones"></i></i>
+          </span>
+          <span class="title">Now Playing:</span>
+          <span class="favourite-music__icon">
+            <i class="fa-regular fa-heart heart-icon"></i>
+            <i class="fa-solid fa-heart heart-icon__red"></i>
+            <span class="tooltip tooltip-favourite">Add Favourite</span>
+          </span>
+        </div>
+        <div class="cd">
+          <img src="./assets/img/CD-img.jpg" alt="" class="cd__img" />
+        </div>
+        <div class="song">
+          <h3 class="song__name">Song Name</h3>
+          <p class="song__author">Song Author</p>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-bar__value"></div>
+        </div>
+        <div class="progress-time">
+          <span class="progress-time__current-time">00</span>
+          <span class="progress-time__duration">00</span>
+        </div>
+        <div class="controls">
+          <div class="btn btn__repeat">
+            <i class="fa-solid fa-repeat btn__repeat"></i>
+          </div>
+          <div class="btn btn__previous">
+            <i class="fa-solid fa-backward-step"></i>
+          </div>
+          <div class="btn btn__play">
+            <i class="fa-solid fa-circle-play btn__play--play-icon"></i>
+            <i class="fa-solid fa-circle-pause btn__play--pause-icon"></i>
+          </div>
+          <div class="btn btn__next">
+            <i class="fa-solid fa-forward-step"></i>
+          </div>
+          <div class="btn btn__random">
+            <i class="fa-solid fa-shuffle"></i>
+          </div>
+        </div>
+
+        <div class="volume-change">
+          <div class="volume">
+            <i class="fa-solid fa-volume-high volume__icon"></i>
+            <i class="fa-solid fa-volume-xmark volume__icon--mute"></i>
+          </div>
+          <div class="volume-bar">
+            <div class="volume-bar__value"></div>
+          </div>
+        </div>
+
+        <audio src="" id="audio"></audio>
+      </div>
+
+      <!-- Music card -->
+
+      <!-- PlayList -->
+      <div class="playList__container">
+        <div class="playList">
+          <header class="playList__header">
+            <h3 class="playList__title">My PlayList</h3>
+            <span class="playList__close">
+              <i class="fa-solid fa-xmark"></i>
+            </span>
+          </header>
+          <ul class="playList__list"></ul>
+        </div>
+      </div>
+
+      <!-- PlayList -->
+    </div>
+
+    <script type="module" src="./assets/js/app.js"></script>
+  </body>
+</html>
